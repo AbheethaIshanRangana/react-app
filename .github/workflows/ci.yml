@@ -21,10 +21,10 @@ jobs:
         env: 
           CI: true
       - name: Build Project
-        if: github.event_name == "push" 
+        if: github.event_name == 'push'
         run: npm run build
       - name: Deploy to staging 
-        if: github.event_name == "push"
+        if: github.event_name == 'push'
         run: npx surge --project ./build --domain ripe-chess.surge.sh
         env:
           SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
