@@ -11,7 +11,8 @@ jobs:
       - name: Use NodeJS
         uses: actions/setup-node@v1
         with:
-          node-version: "12.X"
+          node-version: "16.X"
+      - run: npm cache clean --force
       - run: npm ci 
       - run: npm run format:check
       - run: npm test -- --coverage
