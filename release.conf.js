@@ -4,6 +4,6 @@ modeule.exports = {
     plugins: [
         '@semantic-release/commit-analyzer',
         '@semantic-release/release-notes-generator',
-        '@semantic-release/gitub'
+        '@semantic-release/github'
     ]
 }
