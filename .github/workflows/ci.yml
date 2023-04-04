@@ -26,7 +26,7 @@ jobs:
           node-version: "18.X"
       - run: npm cache clean --force
       - run: npm ci 
-      - run: npm run format:check
+      - run: npm run format:checks
       - run: npm test -- --coverage
         env: 
           CI: true
