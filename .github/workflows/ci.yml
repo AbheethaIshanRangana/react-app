@@ -20,7 +20,7 @@ jobs:
       - name: Use NodeJS
         uses: actions/setup-node@v1
         with:
-          node-version: "16.X"
+          node-version: "18.X"
       - run: npm cache clean --force
       - run: npm ci 
       - run: npm run format:check
